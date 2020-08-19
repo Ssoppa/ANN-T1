@@ -11,8 +11,8 @@ def funcao(x):
 # pontos_dados = [-2, -1, 1, 2]
 # pontos_dados = [-2, -1, 0, 1, 2]
 # pontos_dados = [0, 0.3, 0.9, 1.3, 2]
-pontos_dados = [-1.97, -1.16, -0.34, 0.32, 0.38, 0.61, 1.09, 1.44, 1.81, 1.82]
-# pontos_dados = [-4.65, -4.62, -4.39, -4.25, -4.01, -3.6, -3.52, -2.52, -0.75, 0.47, 0.77, 0.78, 1.44, 2.45, 2.91, 3.06, 3.17, 3.7, 4.49, 4.83]
+# pontos_dados = [-1.97, -1.16, -0.34, 0.32, 0.38, 0.61, 1.09, 1.44, 1.81, 1.82]
+pontos_dados = [-4.65, -4.62, -4.39, -4.25, -4.01, -3.6, -3.52, -2.52, -0.75, 0.47, 0.77, 0.78, 1.44, 2.45, 2.91, 3.06, 3.17, 3.7, 4.49, 4.83]
 
 pontos = [(x, funcao(x)) for x in pontos_dados]
 xs, ys = zip(*pontos)
@@ -55,7 +55,8 @@ for k, v in eq.items():
 
 t = [-4 + i * (8 / 999) for i in range(1000)]
 ft = [funcao(i) for i in t]
-plt.plot(t, ft, label="gráfico de $f(x)=\\frac{2}{1 + x^2}$")
+# plt.plot(t, ft, label="gráfico de $f(x)=\\frac{2}{1 + x^2}$")
+plt.plot(t, ft, label="gráfico da função")
 
 for k, p in eq.items():
     def s(x):
